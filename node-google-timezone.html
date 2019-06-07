@@ -1,0 +1,26 @@
+<script type="text/javascript">
+  RED.nodes.registerType("google-timezone", {
+    category: "function",
+    color: "#a6bbcf",
+    defaults: {
+      GOOGLE_API_KEY: { value: "", required: true }
+    },
+    inputs: 1,
+    outputs: 1,
+    icon: "white-globe.png",
+    label: function() {
+      return this.name || "Google Maps Timezone API";
+    }
+  });
+</script>
+
+<script type="text/x-red" data-template-name="google-timezone">
+  <div class="form-row">
+      <label for="node-input-name"><i class="icon-tag"></i> >Google API Key</label>
+      <input type="text" id="node-input-GOOGLE_API_KEY" placeholder="Key">
+  </div>
+</script>
+
+<script type="text/x-red" data-help-name="google-timezone">
+  <p>Get a timezone by a geolocation positioning based on latitude and longitude.</p>
+</script>
