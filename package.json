@@ -8,7 +8,7 @@
   },
   "node-red": {
     "nodes": {
-      "lower-case": "lower-case.js"
+      "node-google-timezone": "node-google-timezone.js"
     }
   },
   "keywords": [],
